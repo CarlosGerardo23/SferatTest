@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbb02037d063d65459bc231e1bc81fd1, type: 3}
   m_Name: New Deck
   m_EditorClassIdentifier: 
-  numberOfCards: 4
+  numberOfCards: 48
   cardPrefab: {fileID: 7077538448635968189, guid: a3f23b6f66b7c3d4bbe4a2135da6e081, type: 3}
   cardBackGround: {fileID: 5905165440811961532, guid: de6a3903a729850478089500e0957caf, type: 3}
   cardtrap: {fileID: -6948582581368124069, guid: de6a3903a729850478089500e0957caf, type: 3}
   useCardTrap: 1
+  score: 0
   deckPairs:
   - upCardSprite: {fileID: 4464680225224981641, guid: de6a3903a729850478089500e0957caf, type: 3}
   - upCardSprite: {fileID: -2874094148927611319, guid: de6a3903a729850478089500e0957caf, type: 3}

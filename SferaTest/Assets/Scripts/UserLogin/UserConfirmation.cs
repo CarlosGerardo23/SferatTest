@@ -10,6 +10,8 @@ public class UserConfirmation : ScriptableObject
 
 
     UserData userInput;
+
+    public UserData UserInput { get { return userInput; } }
     const string url = "https://raw.githubusercontent.com/Chezzar/PruebaUnityLogin/master/LoginUser";
 
    public void SetUserInput(string user, string password)

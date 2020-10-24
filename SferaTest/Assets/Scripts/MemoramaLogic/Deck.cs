@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Events;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Deck")]
@@ -15,15 +16,17 @@ public class Deck : ScriptableObject
 
     [SerializeField] bool useCardTrap;
 
+    public int score=0;
 
     [SerializeField] List<Pair> deckPairs;
 
-   [HideInInspector] public PairStatus pairStatus;
+    [HideInInspector] public PairStatus pairStatus;
     List<Card> cardsOnGame;
     Transform parent;
     Card[] cardsInHand;
     public void CreateDeck(Transform refParent)
     {
+        score = 0;
         parent = refParent;
         numberOfCards = numberOfCards % 2 != 0 ? numberOfCards - 1 : numberOfCards;
         pairStatus = PairStatus.NULL;
@@ -35,8 +38,6 @@ public class Deck : ScriptableObject
             if (!AddCardsOnGame(deckPairs[i].CreateCards(cardPrefab, cardBackGround, i)))
                 break;
         }
-
-
         ShuffleCards();
         SetCardsOnGame(parent);
         cardsInHand = new Card[2];
@@ -154,11 +155,11 @@ public class Deck : ScriptableObject
 
     }
 
-    public void IsPair()
+    public void IsPair(UnityEvent onvictory=null)
     {
         pairStatus = PairStatus.NULL;
         DesactivateAllCards(true);
-
+        score += 10;
         for (int i = 0; i < cardsInHand.Length; i++)
         {
             cardsInHand[i].isPairUp = true;
@@ -168,6 +169,7 @@ public class Deck : ScriptableObject
         if (CheckAllCards())
         {
             Debug.Log("Ganaste");
+            onvictory.Invoke();
         }
 
     }
@@ -187,7 +189,7 @@ public class Deck : ScriptableObject
     {
         for (int i = 0; i < cardsOnGame.Count; i++)
         {
-            if (cardsOnGame[i].index == -1&&cardsOnGame[i].cardUp)
+            if (cardsOnGame[i].index == -1 && cardsOnGame[i].cardUp)
                 continue;
 
             if (!cardsOnGame[i].isPairUp)

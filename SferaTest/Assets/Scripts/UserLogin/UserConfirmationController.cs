@@ -9,20 +9,15 @@ public class UserConfirmationController : MonoBehaviour
 
     [SerializeField] InputField userInput;
     [SerializeField] InputField passwordInput;
+    [SerializeField] SceneLoader sceneLoader;
+
+    [SerializeField] Text debuggText;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-       
+        Screen.orientation = ScreenOrientation.LandscapeLeft;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-  
-    
     public void LogIn()
     {
         user.SetUserInput(userInput.text, passwordInput.text);
@@ -33,9 +28,9 @@ public class UserConfirmationController : MonoBehaviour
     {
         if (result)
         {
-            Debug.Log("Can log in");
+            sceneLoader.GoToScene(1);
         }
         else
-            Debug.Log("Dont log in");
+            debuggText.text="Dont log in";
     }
 }

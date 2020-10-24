@@ -15,6 +15,22 @@ public class MemoramaController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        switch (deck.pairStatus)
+        {
+            case PairStatus.NULL:
+                break;
+            case PairStatus.NEGATIVE:
+                StartCoroutine(deck.NotPair());
+                break;
+            case PairStatus.POSITIVE:
+                deck.IsPair();
+                break;
+            case PairStatus.TRAP:
+                StartCoroutine(deck.TrapCardActivated());
+                break;
+            default:
+                break;
+        }
+      
     }
 }

@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb02037d063d65459bc231e1bc81fd1, type: 3}
+  m_Name: New Deck
+  m_EditorClassIdentifier: 
+  cardPrefab: {fileID: 7077538448635968189, guid: a3f23b6f66b7c3d4bbe4a2135da6e081, type: 3}
+  cardBackGround: {fileID: 5905165440811961532, guid: de6a3903a729850478089500e0957caf, type: 3}
+  cardtrap: {fileID: -6948582581368124069, guid: de6a3903a729850478089500e0957caf, type: 3}
+  useCardTrap: 1
+  deckPairs:
+  - upCardSprite: {fileID: 4464680225224981641, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: -2874094148927611319, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: 1166152109982788753, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: 9173399121081227533, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: 7608793923853067583, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: -8936708217372338116, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: 5239161781516153953, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: 7767419989880215431, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: 3225623522302174120, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: 5954058645290780606, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: 3590181293038352810, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: 4514230389078036167, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: -4141376725822165579, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: -8148953017371325828, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: 347511102658420301, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: -1115860714402778866, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: 2218116834602196164, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: -3836011085041970003, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: -8075150806434096417, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: -3951520663251471908, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: -993059362575615847, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: -8438341729159167995, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: 3590743234375198531, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: 8634933950371955610, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: 7964695486547938168, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: -4745007672729450336, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: -8339580883189526802, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: 1706119051733904739, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: -8921126523167729106, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: 6875466360478877352, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: 2385839600598235291, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: -6164942944305771714, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: -1119862520575632116, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: 7405657095540772344, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: -4744595584017586480, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: -8508254967647020536, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: 1758531057623319939, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: -6080890126900808051, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: 1279385989183531887, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: 2722906923257731337, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: -7684562557498127196, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: -2378747291556817521, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: -5452595845945618893, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: 4834184210029731797, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: 3746774220151345922, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: -5319775164581474462, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: 2687757740887958448, guid: de6a3903a729850478089500e0957caf, type: 3}
+  - upCardSprite: {fileID: -1597678015088093267, guid: de6a3903a729850478089500e0957caf, type: 3}

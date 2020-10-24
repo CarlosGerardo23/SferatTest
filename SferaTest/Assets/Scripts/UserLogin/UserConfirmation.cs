@@ -16,7 +16,7 @@ public class UserConfirmation : ScriptableObject
     {
         userInput = new UserData(user, password);
     }
-    public IEnumerator CheckUserData(ConfirmUserData confirmData = null)
+    public IEnumerator CheckUserData(ConfirmUserData confirmData )
     {
         
         using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
